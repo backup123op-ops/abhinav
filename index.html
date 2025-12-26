@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funngro | Teen Talent Meets Real Opportunities</title>
+
+<style>
+:root{
+  --green:#1fa971;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui;}
+
+body{
+  background:var(--light);
+  color:#111;
+  line-height:1.6;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 24px;
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+nav img{height:42px}
+
+nav a{
+  text-decoration:none;
+  margin-left:20px;
+  color:#111;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#eafff5,#ffffff);
+}
+
+.hero h1{
+  font-size:clamp(2rem,4vw,3.2rem);
+  color:var(--dark);
+}
+
+.hero p{
+  max-width:700px;
+  margin:16px auto;
+  color:#475569;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:24px;
+  padding:14px 28px;
+  border:2px solid var(--green);
+  color:var(--green);
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.25s;
+}
+
+.btn:hover{
+  background:var(--green);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+.btn:active{
+  transform:scale(.96);
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+section h2{
+  text-align:center;
+  font-size:2rem;
+  margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:#fff;
+  padding:24px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.card h3{
+  margin-bottom:10px;
+  color:var(--green);
+}
+
+/* STEPS */
+.steps .card{
+  border-left:5px solid var(--green);
+}
+
+/* FOOTER */
+footer{
+  background:#0f172a;
+  color:#cbd5e1;
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer p{margin-top:8px;font-size:14px}
+
+/* MOBILE */
+@media(max-width:600px){
+  nav a{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <img src="logo.png" alt="Funngro Logo">
+  <div>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#steps">How it Works</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Where Teen Talent Meets Real Opportunities</h1>
+  <p>Funngro connects teenagers with real freelance projects, helping them earn, learn, and build future-ready skills.</p>
+  <a class="btn" href="#about">Explore Platform</a>
+</section>
+
+<section id="about">
+  <h2>What is Funngro?</h2>
+  <p style="text-align:center;max-width:800px;margin:auto">
+    Funngro is a digital platform operated by Wishbanc Technologies Pvt. Ltd., connecting teens aged 14+ with companies seeking fresh, affordable talent for real-world tasks and projects.
+  </p>
+</section>
+
+<section>
+  <h2>Three Ways to Connect</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Teenlancers</h3>
+      <p>Teenagers gain independence through paid freelance projects and practical experience.</p>
+    </div>
+    <div class="card">
+      <h3>Companies</h3>
+      <p>Businesses access young, motivated talent for digital and creative work.</p>
+    </div>
+    <div class="card">
+      <h3>Shelancers</h3>
+      <p>Women professionals find flexible freelancing opportunities to build careers.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>What Can You Do?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Content & Creative</h3>
+      <p>Blogging, writing, voice-overs, social media marketing, product reviews.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Tasks</h3>
+      <p>Surveys, app testing, registrations, campus ambassador roles.</p>
+    </div>
+  </div>
+</section>
+
+<section id="steps" class="steps">
+  <h2>Start Earning in 5 Steps</h2>
+  <div class="grid">
+    <div class="card">Sign up on the Funngro app</div>
+    <div class="card">Build your profile</div>
+    <div class="card">Choose matching projects</div>
+    <div class="card">Complete work & submit proof</div>
+    <div class="card">Get paid via wallet & UPI</div>
+  </div>
+</section>
+
+<section>
+  <h2>Learning + Earning</h2>
+  <p style="text-align:center;max-width:800px;margin:auto">
+    Beyond money, Funngro focuses on skill-building, certificates, and real experience that strengthens future academic and career opportunities.
+  </p>
+</section>
+
+<section>
+  <h2>Behind the Platform</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Legal Entity</h3>
+      <p>Wishbanc Technologies Private Limited</p>
+    </div>
+    <div class="card">
+      <h3>Location</h3>
+      <p>Mumbai, Maharashtra, India</p>
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>hello@funngro.com<br>080-694-50627</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Funngro Demo Website</strong>
+  <p>This is a demonstration website created for presentation purposes.</p>
+</footer>
+
+</body>
+</html>
